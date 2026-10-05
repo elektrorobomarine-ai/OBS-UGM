@@ -1,0 +1,138 @@
+
+===== 2026-09-09T14:39:18+07:00 LAUNCH OBS Setting (obs_setting.py) =====
+Traceback (most recent call last):
+  File "C:\Users\obs_0\Documents\#UGM OBS _v3\obs_setting.py", line 5328, in on_data_connection_changed
+    self._set_data_connection_status(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        connected
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\obs_0\Documents\#UGM OBS _v3\obs_setting.py", line 4844, in _set_data_connection_status
+    self.shared.update_telemetry(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        data_connected=self.data_connected
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\obs_0\Documents\#UGM OBS _v3\shared_data_v3.py", line 1235, in update_telemetry
+    current = self.read_telemetry()
+  File "C:\Users\obs_0\Documents\#UGM OBS _v3\shared_data_v3.py", line 1179, in read_telemetry
+    values = self._stable_unpack(
+        TELEMETRY_STRUCT,
+        TELEMETRY_OFFSET,
+    )
+  File "C:\Users\obs_0\Documents\#UGM OBS _v3\shared_data_v3.py", line 584, in _stable_unpack
+    seq_before = struct.unpack_from(
+                 ~~~~~~~~~~~~~~~~~~^
+        "<Q",
+        ^^^^^
+        self._buf,
+        ^^^^^^^^^^
+        offset,
+        ^^^^^^^
+    )[0]
+    ^
+ValueError: operation forbidden on released memoryview object
+Traceback (most recent call last):
+  File "C:\Users\obs_0\Documents\#UGM OBS _v3\obs_setting.py", line 5372, in on_data_thread_finished
+    self._set_data_connection_status(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        False
+        ^^^^^
+    )
+    ^
+  File "C:\Users\obs_0\Documents\#UGM OBS _v3\obs_setting.py", line 4844, in _set_data_connection_status
+    self.shared.update_telemetry(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        data_connected=self.data_connected
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\obs_0\Documents\#UGM OBS _v3\shared_data_v3.py", line 1235, in update_telemetry
+    current = self.read_telemetry()
+  File "C:\Users\obs_0\Documents\#UGM OBS _v3\shared_data_v3.py", line 1179, in read_telemetry
+    values = self._stable_unpack(
+        TELEMETRY_STRUCT,
+        TELEMETRY_OFFSET,
+    )
+  File "C:\Users\obs_0\Documents\#UGM OBS _v3\shared_data_v3.py", line 584, in _stable_unpack
+    seq_before = struct.unpack_from(
+                 ~~~~~~~~~~~~~~~~~~^
+        "<Q",
+        ^^^^^
+        self._buf,
+        ^^^^^^^^^^
+        offset,
+        ^^^^^^^
+    )[0]
+    ^
+ValueError: operation forbidden on released memoryview object
+Traceback (most recent call last):
+  File "C:\Users\obs_0\Documents\#UGM OBS _v3\obs_setting.py", line 5351, in on_command_connection_changed
+    self._set_command_connection_status(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        connected
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\obs_0\Documents\#UGM OBS _v3\obs_setting.py", line 4868, in _set_command_connection_status
+    self.shared.update_telemetry(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        command_connected=self.command_connected
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\obs_0\Documents\#UGM OBS _v3\shared_data_v3.py", line 1235, in update_telemetry
+    current = self.read_telemetry()
+  File "C:\Users\obs_0\Documents\#UGM OBS _v3\shared_data_v3.py", line 1179, in read_telemetry
+    values = self._stable_unpack(
+        TELEMETRY_STRUCT,
+        TELEMETRY_OFFSET,
+    )
+  File "C:\Users\obs_0\Documents\#UGM OBS _v3\shared_data_v3.py", line 584, in _stable_unpack
+    seq_before = struct.unpack_from(
+                 ~~~~~~~~~~~~~~~~~~^
+        "<Q",
+        ^^^^^
+        self._buf,
+        ^^^^^^^^^^
+        offset,
+        ^^^^^^^
+    )[0]
+    ^
+ValueError: operation forbidden on released memoryview object
+Traceback (most recent call last):
+  File "C:\Users\obs_0\Documents\#UGM OBS _v3\obs_setting.py", line 5384, in on_command_thread_finished
+    self._set_command_connection_status(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        False
+        ^^^^^
+    )
+    ^
+  File "C:\Users\obs_0\Documents\#UGM OBS _v3\obs_setting.py", line 4868, in _set_command_connection_status
+    self.shared.update_telemetry(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        command_connected=self.command_connected
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\obs_0\Documents\#UGM OBS _v3\shared_data_v3.py", line 1235, in update_telemetry
+    current = self.read_telemetry()
+  File "C:\Users\obs_0\Documents\#UGM OBS _v3\shared_data_v3.py", line 1179, in read_telemetry
+    values = self._stable_unpack(
+        TELEMETRY_STRUCT,
+        TELEMETRY_OFFSET,
+    )
+  File "C:\Users\obs_0\Documents\#UGM OBS _v3\shared_data_v3.py", line 584, in _stable_unpack
+    seq_before = struct.unpack_from(
+                 ~~~~~~~~~~~~~~~~~~^
+        "<Q",
+        ^^^^^
+        self._buf,
+        ^^^^^^^^^^
+        offset,
+        ^^^^^^^
+    )[0]
+    ^
+ValueError: operation forbidden on released memoryview object
